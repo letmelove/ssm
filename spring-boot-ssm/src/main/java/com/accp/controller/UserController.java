@@ -12,12 +12,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.accp.pojo.User;
 import com.accp.service.UserService;
 import com.accp.util.Excel;
 import com.github.pagehelper.PageInfo;
-//这里是控制层
+
 @Controller
 public class UserController {
 	@Autowired
