@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.mapper.UserMapper">
+	<resultMap id="BaseResultMap" type="com.accp.pojo.User">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="name" jdbcType="VARCHAR" property="name" />
+		<result column="sex" jdbcType="VARCHAR" property="sex" />
+	</resultMap>
+
+	<select id="selectUserAll" resultType="com.accp.pojo.User">
+		select * from user
+	</select>
+	<!-- s一共有多少条数据 -->
+	<select id="selectCountTwig" resultType="java.lang.Integer">
+		select count(id) from user
+	</select>
+	
+	<select id="selectUserPage" resultType="com.accp.pojo.User">
+		select * from user LIMIT #{currentPage},#{aNumberOf}
+	</select>
+</mapper>
