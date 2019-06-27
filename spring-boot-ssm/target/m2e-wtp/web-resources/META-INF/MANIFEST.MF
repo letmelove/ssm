@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: spring-boot-ssm
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: tangxiao
+Built-By: Lenovo
 Implementation-Vendor-Id: com.accp
-Build-Jdk: 1.8.0_181
+Build-Jdk: 1.8.0_192
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/spring-boot-ssm
 Created-By: Maven Integration for Eclipse
